@@ -1,0 +1,31 @@
+@mixin box-sizing($sizing) {
+    box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    -webkit-box-sizing: $sizing;
+}
+
+@mixin transform($transform) {
+    transform: $transform;
+    -moz-transform: $transform;
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+}
+
+@mixin transition($transition) {
+    transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin calc($property, $expression) {
+    #{$property}: calc(#{$expression});
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+}
+
+@mixin backdrop-filter($blur) {
+    backdrop-filter: $blur;
+    -webkit-backdrop-filter: $blur;
+}
